@@ -252,7 +252,7 @@ modelL = linearSegmentationNet(num_classes, (img_width, img_height, 3))         
 history = modelL.fit(xTrain, yTrain, epochs=20, batch_size=32, validation_data=(xVal, yVal))    # Обучаем модель на выборке по трем классам
 processImage(modelL, 5, num_classes)
 ```
-![Иллюстрация к проекту](https://github.com/maximAI/Autoencoder/blob/main/Screenshot_2.jpg)
+![Иллюстрация к проекту](https://github.com/maximAI/Segmentation/blob/main/Screenshot_1.jpg)
 [:arrow_up:Оглавление](#4)
 <a name="3"></a>
 ## U-net
@@ -370,7 +370,7 @@ modelUnet = unet(num_classes, (img_width, img_height, 3)) # Создаем мо�
 history = modelUnet.fit(xTrain, yTrain, epochs=20, batch_size=16, validation_data = (xVal, yVal)) # Обучаем модель на выборке по трем классам
 processImage(modelUnet, 5, num_classes)
 ```
-![Иллюстрация к проекту](https://github.com/maximAI/Autoencoder/blob/main/Screenshot_2.jpg)
+![Иллюстрация к проекту](https://github.com/maximAI/Segmentation/blob/main/Screenshot_2.jpg)
 [:arrow_up:Оглавление](#4)
 
 [Ноутбук](https://colab.research.google.com/drive/1cvM-dnxKJK6JTYVjq2CbJrh2t03kJejY?usp=sharing)
